@@ -1,0 +1,50 @@
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { ... }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { ... }
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { ... }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
+
+body {
+  font-family: 'Rock Salt', 'Raleway', sans-serif, arial;
+  background-color: #fff;
+  max-width: 800px;
+  margin: auto;
+}
+.quote{
+  margin-top: 5rem;
+ height: 200px;
+ width: 80%;
+ background-color: #ffffb3;
+ filter: grayscale(30%);
+ border-radius: 5px 20px 5px;
+ padding: 20px;
+ font-size: 1.5rem;
+ align-items: center;
+ text-align: center;
+ border: 10px solid   #4d4d33;
+ box-shadow: 10px 10px 5px 0px rgba(92,91,92,0.45);
+}
+.author{
+ margin-left: 70%;
+ margin-top: -7%;
+ width: 30%;
+ padding: 35px;
+ background-color: #ffffb3;
+ filter: grayscale(40%);
+ border-radius: 50%;
+ font-size: 1rem;
+ align-items: center;
+ text-align: center;
+ border: 10px solid  #4d4d33;
+ z-index: 2;
+ box-shadow: 10px 10px 5px 0px rgba(92,91,92,0.45);
+}
+#new{
+  box-shadow: 10px 10px 5px 0px rgba(92,91,92,0.45);
+}
