@@ -17,17 +17,14 @@ body {
   margin: auto;
 }
 .quote{
-  margin-top: 5rem;
+ margin-top: 5rem;
  height: 200px;
  width: 80%;
- background-color: #ffffb3;
- filter: grayscale(30%);
  border-radius: 5px 20px 5px;
  padding: 20px;
  font-size: 1.5rem;
  align-items: center;
  text-align: center;
- border: 10px solid   #4d4d33;
  box-shadow: 10px 10px 5px 0px rgba(92,91,92,0.45);
 }
 .author{
@@ -35,16 +32,18 @@ body {
  margin-top: -7%;
  width: 30%;
  padding: 35px;
- background-color: #ffffb3;
- filter: grayscale(40%);
  border-radius: 50%;
  font-size: 1rem;
  align-items: center;
  text-align: center;
- border: 10px solid  #4d4d33;
  z-index: 2;
  box-shadow: 10px 10px 5px 0px rgba(92,91,92,0.45);
 }
 #new{
   box-shadow: 10px 10px 5px 0px rgba(92,91,92,0.45);
+}
+.color{
+  background-color: #ffffb3;
+  border: 10px solid #4d4d33;
+  filter: grayscale(40%);
 }
