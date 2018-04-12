@@ -16,13 +16,14 @@ var reset = document.getElementById("new");
 var colors = ['#669999','#669973','#667399','#996699','#996666','#cc0000','#66cc00','#00cccc'];
 var newAuthor = document.getElementsByClassName("author")[0];
 var newQuotes = document.getElementsByClassName("quote")[0];
-
 reset.addEventListener("click", newQuote);
 
 function newQuote (){
 var createNewQuote = whatPeopleSay[Math.floor(Math.random() * 8)];
+var newColor = colors[Math.floor(Math.random() * 8)];
 newQuotes.innerHTML = createNewQuote[0];
 newAuthor.innerHTML = createNewQuote[1];
-document.getElementsByClassName("color").style.backgroundColor = colors[Math.floor(Math.random() * 8)];
+document.body.style.backgroundColor = newColor;
+
   }
 }
