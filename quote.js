@@ -13,10 +13,17 @@ function start() {
   ];
 
 var reset = document.getElementById("new");
-var colors = ['#669999','#669973','#667399','#996699','#996666','#cc0000','#66cc00','#00cccc'];
+var colors = ['#669999','#669977','#667799','#996699','#996666','#cc0000','#66cc00','#00cccc'];
 var newAuthor = document.getElementsByClassName("author")[0];
 var newQuotes = document.getElementsByClassName("quote")[0];
-reset.addEventListener("click", newQuote);
+reset.addEventListener("click", fade);
+var authorFade = $(".author");
+var quoteFade = $(".quote");
+
+function fade(){
+quoteFade.fadeOut();
+authorFade.fadeOut(newQuote);
+}
 
 function newQuote (){
 var createNewQuote = whatPeopleSay[Math.floor(Math.random() * 8)];
@@ -24,6 +31,7 @@ var newColor = colors[Math.floor(Math.random() * 8)];
 newQuotes.innerHTML = createNewQuote[0];
 newAuthor.innerHTML = createNewQuote[1];
 document.body.style.backgroundColor = newColor;
-
+quoteFade.fadeIn();
+authorFade.fadeIn();
   }
 }
