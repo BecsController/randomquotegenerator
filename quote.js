@@ -16,13 +16,14 @@ var reset = document.getElementById("new");
 var colors = ['#669999','#669977','#667799','#996699','#996666','#cc0000','#66cc00','#00cccc'];
 var newAuthor = document.getElementsByClassName("author")[0];
 var newQuotes = document.getElementsByClassName("quote")[0];
-reset.addEventListener("click", fade);
 var authorFade = $(".author");
 var quoteFade = $(".quote");
 
+reset.addEventListener("click", fade);
+
 function fade(){
-quoteFade.fadeOut();
-authorFade.fadeOut(newQuote);
+quoteFade.fadeOut("slow");
+authorFade.fadeOut("slow", newQuote);
 }
 
 function newQuote (){
