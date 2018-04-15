@@ -19,7 +19,7 @@ var newQuotes = document.getElementsByClassName("quote")[0];
 var authorFade = $(".author");
 var quoteFade = $(".quote");
 
-reset.addEventListener("click", newQuote);
+reset.addEventListener("click", fade);
 
 function fade(){
 quoteFade.fadeOut("slow");
