@@ -31,7 +31,7 @@ authorFade.fadeOut("slow", newQuote);
 }
 
 function newQuote (){
-var createNewQuote = whatPeopleSay[Math.floor(Math.random() * 12)];
+var createNewQuote = whatPeopleSay[Math.floor(Math.random() * 11)];
 var newColor = colors[Math.floor(Math.random() * 8)];
 newQuotes.innerHTML = createNewQuote[0];
 newAuthor.innerHTML = createNewQuote[1];
