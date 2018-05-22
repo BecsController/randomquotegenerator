@@ -9,11 +9,11 @@ function start() {
     ['"You only live once, but if you do it right, once is enough."', 'Mae West'],
     ['"Ive learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel."', 'Maya Angelou'],
     ['"Without music, life would be a mistake."', 'Friedrich Nietzsche'],
-    ['"Tonight I can write the saddest lines, I loved her, and sometimes she loved me too."', 'Pablo Neruda']
+    ['"Tonight I can write the saddest lines, I loved her, and sometimes she loved me too."', 'Pablo Neruda'],
     ['"The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty."', 'Winston Churchill'],
     ['"Whether You Think You Can Or Think You Can’t, You’re Right."', 'Henry Ford'],
     ['"Security Is Mostly A Superstition. Life Is Either A Daring Adventure Or Nothing."', 'Helen Keller'],
-    ['"The Only Limit To Our Realization Of Tomorrow Will Be Our Doubts Of Today."', 'Franklin D. Roosevelt']
+    ['"The Only Limit To Our Realization Of Tomorrow Will Be Our Doubts Of Today."', 'Franklin D. Roosevelt'],
 ];
 
 var reset = document.getElementById("new");
@@ -31,7 +31,8 @@ authorFade.fadeOut("slow", newQuote);
 }
 
 function newQuote (){
-var createNewQuote = whatPeopleSay[Math.floor(Math.random() * 11)];
+var random = Math.floor(Math.random() * 12);
+var createNewQuote = whatPeopleSay[random];
 var newColor = colors[Math.floor(Math.random() * 8)];
 newQuotes.innerHTML = createNewQuote[0];
 newAuthor.innerHTML = createNewQuote[1];
