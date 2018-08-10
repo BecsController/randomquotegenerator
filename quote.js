@@ -25,19 +25,21 @@ var quoteFade = $(".quote");
 
 reset.addEventListener("click", fade);
 
-function fade(){
-quoteFade.fadeOut("slow");
-authorFade.fadeOut("slow", newQuote);
+function fade() {
+  quoteFade.fadeOut("slow");
+  authorFade.fadeOut("slow", newQuote);
 }
 
 function newQuote (){
-var random = Math.floor(Math.random() * 12);
-var createNewQuote = whatPeopleSay[random];
-var newColor = colors[Math.floor(Math.random() * 8)];
-newQuotes.innerHTML = createNewQuote[0];
-newAuthor.innerHTML = createNewQuote[1];
-document.body.style.backgroundColor = newColor;
-quoteFade.fadeIn();
-authorFade.fadeIn();
+  var random = Math.floor(Math.random() * 12);
+  var createNewQuote = whatPeopleSay[random];
+  var newColor = colors[Math.floor(Math.random() * 8)];
+
+  newQuotes.innerHTML = createNewQuote[0];
+  newAuthor.innerHTML = createNewQuote[1];
+  document.body.style.backgroundColor = newColor;
+
+  quoteFade.fadeIn();
+  authorFade.fadeIn();
   }
 }

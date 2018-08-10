@@ -16,6 +16,7 @@ body {
   max-width: 800px;
   margin: auto;
 }
+
 .quote{
  margin-top: 5rem;
  height: 200px;
@@ -29,6 +30,7 @@ body {
  background-color: #fff;
  border: 10px solid #000;
 }
+
 .author{
  margin-left: 70%;
  margin-top: -7%;
@@ -43,6 +45,7 @@ body {
  background-color: #fff;
  border: 10px solid #000;
 }
+
 #new{
   box-shadow: 10px 10px 5px 0px rgba(92,91,92,0.45);
 }
